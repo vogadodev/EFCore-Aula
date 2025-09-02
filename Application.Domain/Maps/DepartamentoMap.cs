@@ -13,6 +13,7 @@ namespace Application.Domain.Maps
             builder.Property(x => x.ID).HasColumnName("DEP_ID").ValueGeneratedOnAdd();
             builder.Property(x => x.Nome).IsRequired().HasMaxLength(100).HasColumnName("DEP_NOME");
             builder.Property(x => x.Descricao).IsRequired().HasMaxLength(400).HasColumnName("DEP_DESCRICAO");
+            builder.Property(x => x.DataCricao).HasColumnName("DEP_DATACRIACAO");
         }
     }
 }
